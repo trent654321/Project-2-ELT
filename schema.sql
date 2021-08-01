@@ -1,6 +1,6 @@
---drop table if exists covid_data;
+drop table if exists covid_data;
 drop table if exists countries;
-/*
+
 create table covid_data (
 	loc_code								varchar(10),
 	continent								varchar(20),
@@ -64,7 +64,7 @@ create table covid_data (
 	excess_mortality						numeric,
 	constraint primary_key primary key(loc_code,date)
 );
-*/
+
 create table countries (
 	CountryCode									char(3) primary key,
 	ShortName									varchar(30),
