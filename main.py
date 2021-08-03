@@ -7,9 +7,8 @@ engine = create_engine(db_path)
 
 def main():
 
-	df = pd.read_csv("data/owid-covid-data.csv")
-	print(df.describe())
-	#df.to_sql('covid_data', engine)
+	df = pd.read_csv("data/country.csv")
+	print(df.dtypes)
 
 if __name__ == "__main__":
 	main()
