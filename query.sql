@@ -1,0 +1,1 @@
+select covid_data.iso_code, covid_data.total_cases, countries.incomegroup from covid_data,countries where covid_data.iso_code=countries.countrycode and covid_data.date = '2021-07-28';
